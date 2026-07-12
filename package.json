@@ -1,7 +1,6 @@
 {
   "name": "ai-complaint-generator",
   "version": "1.0.0",
-  "description": "AI-powered Complaint Generator using Google Gemini API",
   "type": "commonjs",
   "engines": {
     "node": "24.x"
