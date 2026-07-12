@@ -155,13 +155,12 @@ Return ONLY the complaint letter.
 // Start Server
 // ===========================================
 
-const PORT = process.env.PORT || 3000;
+if (process.env.NODE_ENV !== "production") {
+    const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
+    app.listen(PORT, () => {
+        console.log(`Server running on ${PORT}`);
+    });
+}
 
-    console.log("----------------------------------");
-    console.log("AI Complaint Generator Started");
-    console.log(`Server Running on Port ${PORT}`);
-    console.log("----------------------------------");
-
-});
+module.exports = app;
