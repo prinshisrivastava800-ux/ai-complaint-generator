@@ -8,16 +8,17 @@
   ],
   "routes": [
     {
-      "src": "/style.css",
-      "dest": "/style.css"
+      "src": "/generate",
+      "methods": ["POST"],
+      "dest": "/server.js"
     },
     {
-      "src": "/script.js",
-      "dest": "/script.js"
+      "src": "/test",
+      "dest": "/server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "server.js"
+      "dest": "/$1"
     }
   ]
 }
