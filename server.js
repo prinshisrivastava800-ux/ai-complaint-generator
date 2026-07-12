@@ -113,9 +113,9 @@ Return ONLY the complaint letter.
 
         return res.status(500).json({
             success: false,
-            error: error.message || "Unable to generate complaint."
-        });
-
+            error: String(error),
+            stack: error.stack
+       });
     }
 
 });
