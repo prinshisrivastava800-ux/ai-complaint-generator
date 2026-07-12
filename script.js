@@ -45,7 +45,7 @@ button.addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch("/generate", {
+        const response = await fetch("/api/generate", {
 
             method: "POST",
 
